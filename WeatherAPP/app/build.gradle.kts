@@ -69,10 +69,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
     // Dagger - Hilt
-    implementation("com.google.dagger:hilt-android:2.50")
-    kapt("com.google.dagger:hilt-compiler:2.50")
+    implementation("com.google.dagger:hilt-android:2.55")
+    kapt("com.google.dagger:hilt-compiler:2.55")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-    kapt("androidx.hilt:hilt-compiler:1.1.0")
+
 
     // Retrofit + Gson
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -102,17 +102,15 @@ dependencies {
     val coilVersion = "2.6.0" // Use the latest version
     implementation("io.coil-kt:coil-compose:$coilVersion")
 
-    val room_version = "2.7.1"
 
-    // Room core runtime
+
+    
+
+    val room_version = "2.7.1" // Or latest stable like "2.6.1" if 2.7.1 is alpha/beta
     implementation("androidx.room:room-runtime:$room_version")
-
-    // Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
 
-    // Optional - Paging 3 Integration
-    implementation("androidx.room:room-paging:$room_version")
 
     // Optional - Testing support
     testImplementation("androidx.room:room-testing:$room_version")
