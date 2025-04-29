@@ -101,4 +101,19 @@ dependencies {
 
     val coilVersion = "2.6.0" // Use the latest version
     implementation("io.coil-kt:coil-compose:$coilVersion")
+
+    val room_version = "2.7.1"
+
+    // Room core runtime
+    implementation("androidx.room:room-runtime:$room_version")
+
+    // Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+
+    // Optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:$room_version")
+
+    // Optional - Testing support
+    testImplementation("androidx.room:room-testing:$room_version")
 }
